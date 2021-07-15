@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+
+
+/* common-공통의 문서 */
+html,body{
+    margin:0;
+    font-size:16px;
+}
+h1,h2,h3,h4,p,figure{
+    margin:0;
+}
+ul,ol,li{
+    list-style-type:none;
+    margin:0; 
+    padding:0;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+*{
+    /* 모든태그 */
+    font-family: '';
+    box-sizing:border-box;
+}
+
+header{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    /* 양끝으로 고정시킴 */
+    align-items: center;
+    /* 같은선상으로 맞춰줌 */
+    padding:40px 0;
+    
+
+}
+header h1{
+    font-size: 1.8rem;
+    /* em-곱하기 배수,r을 붙이면 최상위 배수 */
+
+}
+header nav{
+
+}
+header nav a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left:50px;
+    display: inline-block;
+
+}
+header nav a::after {
+    content:'';
+    display: block;
+    margin:5px auto;
+    border-bottom: 1px solid #000;
+    width:10%;
+    transition: .5s;
+}
+header nav a:hover::after{
+    width:100%;
+}
